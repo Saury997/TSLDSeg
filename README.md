@@ -3,7 +3,7 @@ Official implementation of paper: "TSLDSeg: A Texture-aware and Semantic-enhance
 
 ## Requirements
 
-A suitable [conda](https://conda.io/) environment named `TSLDSseg` can be created
+A suitable [conda](https://conda.io/) environment named `TSLDSeg` can be created
 and activated with:
 
 ```bash
@@ -24,7 +24,7 @@ pip install -e .
 <summary>Solve GitHub connection issues when downloading <code class="inlinecode">taming-transformers</code> or <code class="inlinecode">clip</code></summary>
 
 
-After creating and entering the `TSLDSseg` environment:
+After creating and entering the `TSLDSeg` environment:
 1. create an `src` folder and enter:
 ```bash
 mkdir src

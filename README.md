@@ -8,7 +8,7 @@ and activated with:
 
 ```bash
 conda env create -f environment.yaml
-conda activate TSLDSseg
+conda activate TSLDSeg
 ```
 
 Then, install some dependencies by:

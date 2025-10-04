@@ -1,6 +1,12 @@
 # TSLDSeg
 Official implementation of paper: "TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation"
 
+This repository is based on [SDSeg](https://github.com/lin-tianyu/Stable-Diffusion-Seg),  
+a latent diffusion model for medical image segmentation.  
+Specifically, our work focuses on alleviating the information loss of perceptual compression in conditioning by:
+- Enhancing fine-grained representations to preserve high-frequency details (edges, fine textures, orientations).
+- Leveraging hypergraph modeling to capture semantic relationships and spatial/topological constraints.
+
 ## Requirements
 
 A suitable [conda](https://conda.io/) environment named `TSLDSeg` can be created

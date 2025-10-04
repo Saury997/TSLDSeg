@@ -1,0 +1,60 @@
+model:
+  base_learning_rate: 4.5e-6
+  target: ldm.models.autoencoder.AutoencoderKL
+  params:
+    # num_classes: 2
+    monitor: "val/rec_loss"
+    encoder: 'vig_encoder'
+    embed_dim: 4
+    ckpt_path: '/root/Stable-Diffusion-Seg/logs/2025-01-29T04-02-27_preTrainAE/checkpoints/epoch=0-step=16249.ckpt'
+    lossconfig:
+      target: ldm.modules.losses.LPIPSWithDiscriminator
+      params:
+        disc_start: 1000
+        kl_weight: 0.000001
+        disc_weight: 0.5
+
+    ddconfig:
+      double_z: True
+      z_channels: 4
+      resolution: 224
+      in_channels: 3
+      out_ch: 3
+      init_ch: 128
+      ch_mult: [ 1,2,4,4 ]  # num_down = len(ch_mult)-1
+      num_res_blocks: 2
+      attn_resolutions: [ ]
+      dropout: 0.0
+      drop_path: 0.1
+      K: [8, 4, 2, 2]
+
+data:
+  target: main.DataModuleFromConfig
+  params:
+    batch_size: 8
+    wrap: True
+    train:
+      target: ldm.data.imagenet100.ImageNet100Train
+      params:
+        size: 224
+        data_root: '/root/datasets/ImageNet100/train'
+    validation:
+      target: ldm.data.imagenet100.ImageNet100Validation
+      params:
+        size: 224
+        data_root: '/root/datasets/ImageNet100/val'
+
+lightning:
+  callbacks:
+    image_logger:
+      target: main.ImageLogger
+      params:
+        batch_frequency: 1000
+        max_images: 8
+        increase_log_steps: True
+
+  trainer:
+    max_epochs: 20
+    benchmark: True
+    accumulate_grad_batches: 1
+    gpus: 0,

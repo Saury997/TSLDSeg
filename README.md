@@ -121,4 +121,5 @@ This work is built upon the following open-source projects. We sincerely thank t
 
 - [SDSeg](https://github.com/lin-tianyu/Stable-Diffusion-Seg)
 - [latent-diffusion](https://github.com/CompVis/latent-diffusion)
+- [DeepHypergraph](https://github.com/iMoonLab/DeepHypergraph)
 

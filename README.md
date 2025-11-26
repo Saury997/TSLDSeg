@@ -1,5 +1,5 @@
 # TSLDSeg
-Official implementation of paper: "TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation"
+[Pattern Recognition 2025] Official implementation of paper: "TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation"
 
 This repository is based on [SDSeg](https://github.com/lin-tianyu/Stable-Diffusion-Seg),  
 a latent diffusion model for medical image segmentation.  

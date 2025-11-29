@@ -131,7 +131,7 @@ author = {Zongjian Yang and Chunquan Li and Jiquan Ma}
 ```
 or
 ```plain
-Yang, Z., Li, C., & Ma, J. (2025). TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation. *Pattern Recognition*, 112795. https://doi.org/10.1016/j.patcog.2025.112795
+Zongjian Yang, Chunquan Li, Jiquan Ma, TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation, Pattern Recognition (2025), doi: https://doi.org/10.1016/j.patcog.2025.112795
 ```
 
 ## Acknowledgement

@@ -115,6 +115,25 @@ After training an TSLDSeg model, you should **manually modify the run paths** in
 ```bash
 python -u scripts/slice2seg.py --dataset cvc
 ```
+
+## Citation
+If you find this repository useful in your research, please consider citing:
+```bibtex
+@article{YANG2025112795,
+title = {TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation},
+journal = {Pattern Recognition},
+pages = {112795},
+year = {2025},
+issn = {0031-3203},
+doi = {https://doi.org/10.1016/j.patcog.2025.112795},
+author = {Zongjian Yang and Chunquan Li and Jiquan Ma}
+}
+```
+or
+```plain
+Yang, Z., Li, C., & Ma, J. (2025). TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation. *Pattern Recognition*, 112795. https://doi.org/10.1016/j.patcog.2025.112795
+```
+
 ## Acknowledgement
 
 This work is built upon the following open-source projects. We sincerely thank the authors for their excellent contributions:

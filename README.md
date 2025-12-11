@@ -1,8 +1,7 @@
 # TSLDSeg
-[Pattern Recognition 2025] Official implementation of paper: "TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation"
+[Pattern Recognition 2025] Official implementation of [paper](https://doi.org/10.1016/j.patcog.2025.112795): "TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation".
 
-This repository is based on [SDSeg](https://github.com/lin-tianyu/Stable-Diffusion-Seg),  
-a latent diffusion model for medical image segmentation.  
+This repository is based on [SDSeg](https://github.com/lin-tianyu/Stable-Diffusion-Seg), a latent diffusion model for medical image segmentation.  
 Specifically, our work focuses on alleviating the information loss of perceptual compression in conditioning by:
 - Enhancing fine-grained representations to preserve high-frequency details (edges, fine textures, orientations).
 - Leveraging hypergraph modeling to capture semantic relationships and spatial/topological constraints.
@@ -119,19 +118,20 @@ python -u scripts/slice2seg.py --dataset cvc
 ## Citation
 If you find this repository useful in your research, please consider citing:
 ```bibtex
-@article{YANG2025112795,
-title = {TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation},
+@article{YANG2026112795,
+title = {TSLDSeg: A texture-aware and semantic-enhanced latent diffusion model for medical image segmentation},
 journal = {Pattern Recognition},
+volume = {173},
 pages = {112795},
-year = {2025},
+year = {2026},
 issn = {0031-3203},
 doi = {https://doi.org/10.1016/j.patcog.2025.112795},
-author = {Zongjian Yang and Chunquan Li and Jiquan Ma}
+author = {Zongjian Yang and Chunquan Li and Jiquan Ma},
 }
 ```
 or
 ```plain
-Zongjian Yang, Chunquan Li, Jiquan Ma, TSLDSeg: A Texture-aware and Semantic-enhanced Latent Diffusion Model for Medical Image Segmentation, Pattern Recognition (2025), doi: https://doi.org/10.1016/j.patcog.2025.112795
+Z. Yang, C. Li and J. Ma, “TSLDSeg: A texture-aware and semantic-enhanced latent diffusion model for medical image segmentation,” Pattern Recognition, vol. 173, p. 112795, 2026, doi: 10.1016/j.patcog.2025.112795.
 ```
 
 ## Acknowledgement
